@@ -16,6 +16,14 @@ body {
     background-image: url(/public/blurry-gradient-haikei\ \(4\).png);
 
 }
+#cursor{
+    background-color: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+}
 
 .nav {
     display: flex;
