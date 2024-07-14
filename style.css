@@ -19,9 +19,7 @@ body {
     width: 100%;
     background-image: url(/public/blurry-gradient-haikei\ \(5\).png);
     font-family: 'font';
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -webkit-transform: translate3d(0,0,0);
+
 }
 .container {
     display: flex;
