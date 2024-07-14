@@ -151,6 +151,9 @@ img {
     }
 }
 
+.centered-div h1 {
+    letter-spacing: 10px;
+}
 
 .write{
     display: block;
@@ -161,6 +164,7 @@ img {
     margin-top: -150px ;
     font-size: 4rem;
 }
+
 .icon{
     display: flex;
     justify-content: space-between;
@@ -223,7 +227,7 @@ img {
 
 
 #intro {
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 
 #intro .title {
@@ -267,7 +271,10 @@ img {
     margin: auto;
     /* align-items: center; */
     font-family: 'font-new';
-    background-color: #fd4556;
+    background: linear-gradient(to right, rgb(28, 21, 71) 50%, #fd4556 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease;
     color: aliceblue;
     border: none;
     margin-top: 2rem;
@@ -277,4 +284,8 @@ img {
     border-top-left-radius: 20px;
     border-bottom-right-radius: 10px;
     box-shadow: 2px 2px 22px rgb(42, 19, 70);
+}
+
+#intro .intro-btn:hover {
+    background-position: left bottom;
 }
