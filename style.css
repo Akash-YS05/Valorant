@@ -16,6 +16,80 @@ body {
     background-image: url(/public/blurry-gradient-haikei\ \(4\).png);
 
 }
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav .open-btn {
+    position: fixed;
+    top: 7px;
+    right: 55px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.sidebar {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.95); /* Transparent background */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding-top: 60px;
+    opacity: 0; /* Start with hidden */
+    transform: scale(0.8); /* Start with smaller scale */
+    transition: right 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    line-height:30px
+}
+
+.sidebar ul li a:hover {
+    color: rgb(45, 35, 108);
+    font-weight: bold;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 7px;
+    right: 55px;
+    font-size: 24px;
+    cursor: pointer;
+    color:#fff
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 #cursor{
     background-color: #ffffff66;
     height: 30px;

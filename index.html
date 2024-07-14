@@ -10,7 +10,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Valorant</title>
     <link rel="stylesheet" href="/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Add this line -->
 </head>
 
 <body>
@@ -21,20 +20,19 @@
                 <img width="30px" height="30px"
                     src="/public/vecteezy_valorant-logo-png-valorant-icon-png-transparent_22636390.png" alt="">
             </div>
-            <div class="right">
-                <span class="menu-btn" onclick="toggleMenu()">☰</span>
-            </div>
+            <button class="open-btn" onclick="toggleSidebar()">&#9776;</button>
         </div>
+        
         <div class="centered-div">
             <div class="write">
-                <h1>VALO RANT</h1>
+                <div id="t"><h1 class="m">VALORANT</h1></div>
                 <div class="icon">
                     <div class="left">
                         <i class="fa-solid fa-person-rifle"></i>
                         <h3>26 KILLS</h3>
                         <h6>TEAMDEATH</h6>
                         <div class="line"></div>
-                        <button class="play">Play Now</button>
+                        <button class="play">Play</button>
                     </div>
                     <div class="line"></div>
                     <div class="right">
@@ -48,7 +46,6 @@
                 </div>
             </div>
             <img class="ing" src="/public/toppng.com-valorant-art-360x450.png" alt="Valorant Image">
-
         </div>
 
         <div class="main">
@@ -56,6 +53,17 @@
         </div>
     </div>
 
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="toggleSidebar()">&#10006;</div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">GAME INFO</a></li>
+            <li><a href="#">MEDIA</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">LEADERBOARD</a></li>
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Add this line -->
     <script src="/script.js"></script>
 
 </body>
