@@ -2,6 +2,10 @@
     font-family: 'font';
     src: url('/public/before-modern-demo/Before Modern Demo.otf') format('opentype');
 }
+@font-face {
+    font-family: 'font-new';
+    src: url('/public/Valorant\ Font.ttf') format('truetype');
+}
 
 * {
     margin: 0;
@@ -13,8 +17,8 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-image: url(/public/blurry-gradient-haikei\ \(4\).png);
-
+    background-image: url(/public/blurry-gradient-haikei\ \(5\).png);
+    font-family: 'font';
 }
 .container {
     display: flex;
@@ -192,7 +196,8 @@ img {
     color: aliceblue;
     border: none;
     margin-top: 50px;
-    padding: 10px 20px;
+    padding: 10px 30px;
+    font-size: 1em;
     transition: 0.4s;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 10px;
@@ -204,7 +209,7 @@ img {
     color: aliceblue;
     border: none;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     transition: 0.4s;
 }
 
@@ -214,4 +219,62 @@ img {
     margin-top: 40px;
     border: none;
 
+}
+
+
+#intro {
+    margin-top: 40px;
+}
+
+#intro .title {
+    text-align: center;
+    line-height: 0px;
+    font-size: 4vw;
+    color: white;
+    /* position: absolute; */
+    padding-bottom: 4rem;
+}
+
+#intro .title span {
+    font-size: 6vw;
+    opacity: 0.1;
+}
+
+#intro .intro-vid video {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    outline: 8px solid #fd4556;
+    padding: 1rem;
+}
+
+#intro .intro-p {
+    padding-top: 30px;
+    text-align: center;
+    line-height: 3rem;
+    font-family: 'font-new';
+    font-size: 1.5rem;
+    color: white;
+}
+
+#intro .intro-p span {
+    color: #fd4556;
+}
+
+#intro .intro-btn {
+    display: block;
+    margin: auto;
+    /* align-items: center; */
+    font-family: 'font-new';
+    background-color: #fd4556;
+    color: aliceblue;
+    border: none;
+    margin-top: 2rem;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    transition: 0.4s;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 22px rgb(42, 19, 70);
 }

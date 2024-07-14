@@ -30,9 +30,9 @@ function toggleSidebar() {
     const isOpen = sidebar.style.right === '0px';
 
     if (isOpen) {
-        gsap.to(sidebar, { duration: 0.5, right: '-300px', opacity: 0, scale: 0.8, ease: "power2.inOut" });
+        gsap.to(sidebar, { duration: 0.3, right: '-300px', opacity: 0, scale: 0.8, ease: "power2.inOut" });
     } else {
-        gsap.to(sidebar, { duration: 0.5, right: '0', opacity: 1, scale: 1, ease: "power2.inOut" });
+        gsap.to(sidebar, { duration: 0.3, right: '0', opacity: 1, scale: 1, ease: "power2.inOut" });
     }
 }
 
