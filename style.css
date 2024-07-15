@@ -19,7 +19,7 @@ body {
     height: 100%;
     width: 100%;
     background-image: url(/public/blurry-gradient-haikei\ \(5\).png);
-
+    overflow-x: hidden;
     font-family: 'font';
 
 }
@@ -127,6 +127,18 @@ img {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.nav img {
+    height: 30px;
+    width:auto;
+}
+
+.nav button div {
+    width: 35px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: #fff;
+}
+
 .centered-div {
     display: flex;
     justify-content: center;
@@ -135,7 +147,7 @@ img {
     height: 110%;
     position: relative;
     overflow: hidden;
-    background-image: url(/public/blurry-gradient-haikei\ \(5\).png);
+    background-image: url(/public/HD-wallpaper-video-game-valorant-logo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,6 +179,9 @@ img {
 .centered-div h1 {
     letter-spacing: 8px;
     font-size: 9vw;
+    /* background: -webkit-linear-gradient(#fd4556, rgb(28, 21, 71));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 .write {
@@ -203,20 +218,30 @@ h6 {
     font-size: 2rem;
 }
 
+.left span {
+    color: #fd4556;
+}
+
+.right span {
+    color: #fd4556;
+}
+
 .right {
     margin-right: 80px;
     font-family: 'font-new';
+    margin-top: -100px;
 }
 
 .right h3,
 h6 {
     font-size: 2rem;
+    /* margin-right: -20px; */
 }
 
 .icon .line {
     text-align: center;
     width: 1px;
-    height: 10px;
+    height: 20px;
     /* Adjust height as needed */
     background-color: aliceblue;
 }
@@ -233,8 +258,8 @@ h6 {
     color: aliceblue;
     border: none;
     margin-top: 50px;
-    padding: 10px 30px;
-    font-size: 0.7em;
+    padding: 0.7rem 30px;
+    font-size: 0.9em;
     /* transition: 0.4s; */
     border-top-left-radius: 20px;
     border-bottom-right-radius: 10px;
@@ -262,31 +287,40 @@ h6 {
     padding: 10px;
     margin-top: 40px;
     border: none;
-
 }
 
 
 #intro {
-    margin-top: 1rem;
+    margin-top: 3rem;
 
 }
 
 .title {
     text-align: center;
-    line-height: 0px;
+    line-height: 0;
     font-size: 4vw;
     color: white;
     /* position: absolute; */
     padding-bottom: 4rem;
-    letter-spacing: 7px;
+    letter-spacing: 4px;
 
 }
 
 #intro .title span {
-    font-size: 6.5vw;
+    font-size: 9vw;
+    font-family: 'font-new';
     opacity: 0.1;
+    word-spacing: 40px;
     letter-spacing: 0;
     animation: fade-in-right;
+}
+
+#intro .title .dot {
+    color: red;
+    font-size: 6vw;
+    padding-bottom: 4rem;
+    opacity: 1;
+    word-spacing: 0;
 }
 
 #intro .intro-vid video {
@@ -338,43 +372,16 @@ h6 {
 }
 
 #agents {
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
-
-/* .main12{
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-    padding: 20px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(/public/blurry-gradient-haikei\ \(5\).png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .main12 img{
-    z-index: 2;
-    animation: png 3s infinite ease-in-out;
-  }
-
-  .jett{
-    padding: 50px;
-    font-size: 20px;
-    width: 100%;
-    height: auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    color: #fff;
-
-  } */
+#agents span {
+    font-size: 12vw;
+    opacity: 0.1;
+    letter-spacing: 30px;
+    animation: fade-in-right;
+    font-family: 'font-new';
+}
 
 .agents {
     position: relative;
@@ -446,7 +453,11 @@ h6 {
     bottom: 0;
     left: 0;
     font-size: 5rem;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
+}
+
+.ag-title2 {
+    top: 0;
 }
 
 .agent-valo {
@@ -490,21 +501,13 @@ h6 {
     right: 0;
     z-index: 10;
     width: 300px;
-    /* Adjust as needed */
     height: auto;
     margin: 10px;
-    /* Adjust as needed */
     border: 5px solid #00000000;
-    /* Border color and width */
-    border-radius: 10px;
-    /* Optional: rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
         0 6px 20px rgba(0, 0, 0, 0.2);
-    /* 3D shadow effect */
-    transform: perspective(1000px) rotateY(20deg) rotateX(20deg);
-    /* 3D transform */
+    transform: perspective(1100px) rotateY(25deg) rotateX(20deg);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    /* Smooth transition */
     background: rgba(255, 255, 255, 0);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(106, 106, 106, 0.959);
@@ -512,16 +515,13 @@ h6 {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: 0.3s;
-
     margin-top: -10px;
 }
 
 .agent-icon:hover {
     transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.05);
-    /* 3D transform on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4),
         0 12px 40px rgba(0, 0, 0, 0.3);
-    /* Enhanced shadow on hover */
     width: 310px;
     transition: 0.3s;
     height: auto;
