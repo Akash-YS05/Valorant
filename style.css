@@ -2,6 +2,7 @@
     font-family: 'font';
     src: url('/public/before-modern-demo/Before Modern Demo.otf') format('opentype');
 }
+
 @font-face {
     font-family: 'font-new';
     src: url('/public/Valorant\ Font.ttf') format('truetype');
@@ -18,10 +19,11 @@ body {
     height: 100%;
     width: 100%;
     background-image: url(/public/blurry-gradient-haikei\ \(5\).png);
-    
+
     font-family: 'font';
 
 }
+
 .container {
     display: flex;
     height: 100vh;
@@ -45,12 +47,15 @@ body {
     top: 0;
     width: 300px;
     height: 100%;
-    background-color: #110f29f3; /* Transparent background */
+    background-color: #110f29f3;
+    /* Transparent background */
     box-shadow: -2px 0 51px rgba(118, 66, 164, 0.5);
     z-index: 1000;
     padding-top: 60px;
-    opacity: 0; /* Start with hidden */
-    transform: scale(0.8); /* Start with smaller scale */
+    opacity: 0;
+    /* Start with hidden */
+    transform: scale(0.8);
+    /* Start with smaller scale */
     transition: right 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -68,7 +73,7 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 22px;
-    line-height:30px
+    line-height: 30px
 }
 
 .sidebar ul li a:hover {
@@ -82,7 +87,7 @@ body {
     right: 55px;
     font-size: 24px;
     cursor: pointer;
-    color:#fff
+    color: #fff
 }
 
 .main-content {
@@ -96,7 +101,8 @@ img {
     max-width: 100%;
     height: auto;
 }
-#cursor{
+
+#cursor {
     background-color: #ffffff66;
     height: 30px;
     width: 30px;
@@ -104,7 +110,8 @@ img {
     position: fixed;
     z-index: 9;
 }
-.main1{
+
+.main1 {
     height: 100%;
     width: 100%;
 }
@@ -133,21 +140,25 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .ing {
     width: 70vh;
     height: 100vh;
     margin-left: 0px;
     z-index: 2;
-    animation: png 3s infinite ease-in-out; /* Adding ease-in-out for smoother animation */
+    animation: png 3s infinite ease-in-out;
+    /* Adding ease-in-out for smoother animation */
 }
 
 @keyframes png {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-20px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -158,17 +169,17 @@ img {
     font-size: 9vw;
 }
 
-.write{
+.write {
     display: block;
     font-family: 'font';
     z-index: 0;
     position: absolute;
     color: aliceblue;
-    margin-top: -150px ;
+    margin-top: -150px;
     font-size: 4rem;
 }
 
-.icon{
+.icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -180,34 +191,43 @@ img {
     /* background-color: aliceblue; */
     z-index: 22;
 }
-.left{
+
+.left {
     margin-left: 80px;
     padding: 10px;
     font-family: 'font-new';
 }
 
-.left h3,h6 {
+.left h3,
+h6 {
     font-size: 2rem;
 }
-.right{
+
+.right {
     margin-right: 80px;
     font-family: 'font-new';
 }
-.right h3,h6 {
+
+.right h3,
+h6 {
     font-size: 2rem;
 }
+
 .icon .line {
     text-align: center;
     width: 1px;
-    height: 10px; /* Adjust height as needed */
+    height: 10px;
+    /* Adjust height as needed */
     background-color: aliceblue;
 }
-.main{
+
+.main {
     width: 100%;
     height: 100%;
     background-color: aliceblue;
 }
-.play{
+
+.play {
     font-family: 'font';
     /* background-color: rgb(32, 25, 75); */
     color: aliceblue;
@@ -225,7 +245,8 @@ img {
     background-position: right bottom;
     transition: background-position 0.5s ease;
 }
-.play:hover{
+
+.play:hover {
     /* font-family: 'font';
     background-color: rgb(45, 35, 108);
     color: aliceblue;
@@ -236,7 +257,7 @@ img {
     background-position: left bottom;
 }
 
-.play1{
+.play1 {
     border-radius: 50%;
     padding: 10px;
     margin-top: 40px;
@@ -247,7 +268,7 @@ img {
 
 #intro {
     margin-top: 1rem;
-    
+
 }
 
 .title {
@@ -319,12 +340,9 @@ img {
 #agents {
     margin-top: 4rem;
 }
-.reveal {
-    opacity: 0;
-    transform: translateY(50px);
-  }
 
-  /* .main12{
+
+/* .main12{
     width: 100%;
     height: auto;
     background-color: #fff;
@@ -366,166 +384,150 @@ img {
     margin: auto;
     color: white;
     font-family: 'font-new';
-
 }
 
-  .agents .agent1 {
+.agents .agent1,
+.agent2,
+.agent3,
+.agent4,
+.agent5,
+.agent6,
+.agent7,
+.agent8,
+.agent9 {
     position: relative;
-    background-image: url('/public/wallpaperflare.com_wallpaper\ \(1\).jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
     margin: 5rem 0;
     outline: 8px solid #fd4556;
     outline-offset: 1rem;
-  }
+}
 
-  .agent2 {
-    position: relative;
+.agent1 {
+    background-image: url('/public/wallpaperflare.com_wallpaper (1).jpg');
+}
+
+.agent2 {
     background-image: url('/public/wallpaperflare.com_wallpaper.jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin: 5rem 0;
-    outline: 8px solid #fd4556;
-    outline-offset: 1rem;
+}
 
-  }
-  .agent3 {
-    position: relative;
+.agent3 {
+    background-image: url('/public/wallpaperflare.com_wallpaper (2).jpg');
+}
 
-    background-image: url('/public/wallpaperflare.com_wallpaper\ \(2\).jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin: 5rem 0;
-    outline: 8px solid #fd4556;
-    outline-offset: 1rem;
+.agent4 {
+    background-image: url('/public/wallpaperflare.com_wallpaper (3).jpg');
+}
 
-  }
-  .agent4 {
-    position: relative;
+.agent5 {
+    background-image: url('/public/wallpaperflare.com_wallpaper (4).jpg');
+}
 
-    background-image: url('/public/wallpaperflare.com_wallpaper\ \(3\).jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin: 5rem 0;
-    outline: 8px solid #fd4556;
-    outline-offset: 1rem;
+.agent6 {
+    background-image: url('/public/wallpaperflare.com_wallpaper (5).jpg');
+}
 
-  }
-  .agent5 {
-    position: relative;
+.agent7 {
+    background-image: url('/public/wallpaperflare.com_wallpaper (6).jpg');
+}
 
-    background-image: url('/public/wallpaperflare.com_wallpaper\ \(4\).jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin: 5rem 0;
-    outline: 8px solid #fd4556;
-    outline-offset: 1rem;
+.agent8 {
+    background-image: url('/public/wallpaperflare.com_wallpaper (8).jpg');
+}
 
-  }
-  .agent6 {
-    position: relative;
+.agent9 {
+    background-image: url('/public/wallpaperflare.com_wallpaper (9).jpg');
+}
 
-    background-image: url('/public/wallpaperflare.com_wallpaper\ \(5\).jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin: 5rem 0;
-    outline: 8px solid #fd4556;
-    outline-offset: 1rem;
-
-  }
-  .agent7 {
-    position: relative;
-    background-image: url('/public/wallpaperflare.com_wallpaper\ \(6\).jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin: 5rem 0;
-    outline: 8px solid #fd4556;
-    outline-offset: 1rem;
-
-  }
-  .agent8 {
-    position: relative;
-
-    background-image: url('/public/wallpaperflare.com_wallpaper\ \(8\).jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin: 5rem 0;
-    outline: 8px solid #fd4556;
-    outline-offset: 1rem;
-
-  }
-  .agent9 {
-    position: relative;
-    background-image: url('/public/wallpaperflare.com_wallpaper\ \(9\).jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin: 5rem 0;
-    outline: 8px solid #fd4556;
-    outline-offset: 1rem;
-
-  }
-
-  .ag-title1 {
+.ag-title1,
+.ag-title2 {
     position: absolute;
     bottom: 0;
     left: 0;
-  }
-  .ag-title2 {
-    position: absolute;
-    /* bottom: 0;
-    left: 0; */
-  }
-
-  .ag-title1 {
     font-size: 5rem;
     letter-spacing: 6px;
-  }
+}
 
-  .ag-title2 {
-    font-size: 5rem;
-    letter-spacing: 6px;
-  }
-
-  .agent-valo {
+.agent-valo {
     position: absolute;
     writing-mode: vertical-lr;
     right: 0;
     font-size: 5.5rem;
     color: #fd4556;
     opacity: 0.2;
-  }
-  
-  .agent1-p {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.agent1-p,
+.agent1-p1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 40%;
     font-size: 20px;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(8px);
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-  }
-  .agent1-p1 {
+}
+
+.agent1-p {
+    border-right: 1px solid rgba(255, 255, 255, 0.285);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.251);
+    border-radius: 10px;
+}
+
+.agent1-p1 {
+    border-radius: 10px;
     position: absolute;
     bottom: 0;
     left: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 40%;
     height: auto;
-    font-size: 20px;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(8px);
-    border-right: 1px solid white;
-    border-top: 1px solid white;
-  }
- 
+    border-right: 1px solid rgba(255, 255, 255, 0.333);
+    border-top: 1px solid rgba(255, 255, 255, 0.299);
+}
+
+.agent-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 300px;
+    /* Adjust as needed */
+    height: auto;
+    margin: 10px;
+    /* Adjust as needed */
+    border: 5px solid #00000000;
+    /* Border color and width */
+    border-radius: 10px;
+    /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+        0 6px 20px rgba(0, 0, 0, 0.2);
+    /* 3D shadow effect */
+    transform: perspective(1000px) rotateY(20deg) rotateX(20deg);
+    /* 3D transform */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    /* Smooth transition */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(106, 106, 106, 0.959);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+
+    margin-top: -10px;
+}
+
+.agent-icon:hover {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.05);
+    /* 3D transform on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4),
+        0 12px 40px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow on hover */
+    width: 310px;
+    transition: 0.3s;
+    height: auto;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+}
