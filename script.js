@@ -36,7 +36,6 @@ function toggleSidebar() {
     }
 }
 
-// script.js
 
 gsap.registerPlugin(ScrollTrigger);
 
