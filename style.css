@@ -324,7 +324,7 @@ img {
     transform: translateY(50px);
   }
 
-  .main12{
+  /* .main12{
     width: 100%;
     height: auto;
     background-color: #fff;
@@ -356,4 +356,176 @@ img {
     font-family: 'Courier New', Courier, monospace;
     color: #fff;
 
+  } */
+
+.agents {
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+    display: block;
+    margin: auto;
+    color: white;
+    font-family: 'font-new';
+
+}
+
+  .agents .agent1 {
+    position: relative;
+    background-image: url('/public/wallpaperflare.com_wallpaper\ \(1\).jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0;
+    outline: 8px solid #fd4556;
+    outline-offset: 1rem;
   }
+
+  .agent2 {
+    position: relative;
+    background-image: url('/public/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0;
+    outline: 8px solid #fd4556;
+    outline-offset: 1rem;
+
+  }
+  .agent3 {
+    position: relative;
+
+    background-image: url('/public/wallpaperflare.com_wallpaper\ \(2\).jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0;
+    outline: 8px solid #fd4556;
+    outline-offset: 1rem;
+
+  }
+  .agent4 {
+    position: relative;
+
+    background-image: url('/public/wallpaperflare.com_wallpaper\ \(3\).jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0;
+    outline: 8px solid #fd4556;
+    outline-offset: 1rem;
+
+  }
+  .agent5 {
+    position: relative;
+
+    background-image: url('/public/wallpaperflare.com_wallpaper\ \(4\).jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0;
+    outline: 8px solid #fd4556;
+    outline-offset: 1rem;
+
+  }
+  .agent6 {
+    position: relative;
+
+    background-image: url('/public/wallpaperflare.com_wallpaper\ \(5\).jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0;
+    outline: 8px solid #fd4556;
+    outline-offset: 1rem;
+
+  }
+  .agent7 {
+    position: relative;
+    background-image: url('/public/wallpaperflare.com_wallpaper\ \(6\).jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0;
+    outline: 8px solid #fd4556;
+    outline-offset: 1rem;
+
+  }
+  .agent8 {
+    position: relative;
+
+    background-image: url('/public/wallpaperflare.com_wallpaper\ \(8\).jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0;
+    outline: 8px solid #fd4556;
+    outline-offset: 1rem;
+
+  }
+  .agent9 {
+    position: relative;
+    background-image: url('/public/wallpaperflare.com_wallpaper\ \(9\).jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0;
+    outline: 8px solid #fd4556;
+    outline-offset: 1rem;
+
+  }
+
+  .ag-title1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .ag-title2 {
+    position: absolute;
+    /* bottom: 0;
+    left: 0; */
+  }
+
+  .ag-title1 {
+    font-size: 5rem;
+    letter-spacing: 6px;
+  }
+
+  .ag-title2 {
+    font-size: 5rem;
+    letter-spacing: 6px;
+  }
+
+  .agent-valo {
+    position: absolute;
+    writing-mode: vertical-lr;
+    right: 0;
+    font-size: 5.5rem;
+    color: #fd4556;
+    opacity: 0.2;
+  }
+  
+  .agent1-p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 40%;
+    font-size: 20px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  .agent1-p1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 40%;
+    height: auto;
+    font-size: 20px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+  }
+ 
