@@ -36,3 +36,21 @@ function toggleSidebar() {
     }
 }
 
+// script.js
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray('.reveal').forEach(element => {
+  gsap.fromTo(element, 
+    { opacity: 0, y: 50 }, 
+    { opacity: 1, y: 0, 
+      scrollTrigger: {
+        trigger: element,
+        start: "top 80%", // when the top of the element is 80% from the top of the viewport
+        end: "bottom 20%", // when the bottom of the element is 20% from the top of the viewport
+        scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+        toggleActions: "play none none none" // onEnter, onLeave, onEnterBack, onLeaveBack
+      }
+    }
+  );
+});
