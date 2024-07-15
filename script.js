@@ -53,3 +53,13 @@ gsap.utils.toArray('.reveal').forEach(element => {
     }
   );
 });
+
+
+// scripts.js
+document.querySelector('.map-container').addEventListener('wheel', function(event) {
+    if (event.deltaY !== 0) {
+        event.preventDefault();
+        this.scrollLeft += event.deltaY;
+    }
+});
+
