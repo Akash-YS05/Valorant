@@ -70,9 +70,9 @@
         </div>
 
 
-        <div class="agents" class="reveal">
+        <div class="agents">
             <img  src="/public/undefined - Imgur (6).png" class="agent-icon" alt="Agent Icon">
-            <div class="agent1" class="reveal">
+            <div id="agent1" class="reveal">
                 <h1 class="ag-title1">JETT</h1>
                 <h1 class="agent-valo">VALORANT</h1>
                 <div class="agent1-p">
@@ -81,7 +81,7 @@
                 
                 
             </div>
-            <div class="agent2"class="reveal">
+            <div id="agent2"class="reveal">
                 <img  src="/public/undefined - Imgur (5).png" class="agent-icon" alt="Agent Icon">
                 <h1 class="ag-title2">KILLJOY</h1>
                 <h1 class="agent-valo">VALORANT</h1>
@@ -90,7 +90,7 @@
                 </div>
 
             </div>
-            <div class="agent3" class="reveal">
+            <div id="agent3" class="reveal">
                 <img  src="/public/undefined - Imgur.png" class="agent-icon" alt="Agent Icon">
                 <h1 class="ag-title1">RAZE</h1>
                 <h1 class="agent-valo">VALORANT</h1>
@@ -99,7 +99,7 @@
                 </div>
 
             </div>
-            <div class="agent4" class="reveal">
+            <div id="agent4" class="reveal">
                 <img  src="/public/undefined - Imgur (8).png" class="agent-icon" alt="Agent Icon">
                 <h1 class="ag-title2">SAGE</h1>
                 <h1 class="agent-valo">VALORANT</h1>
@@ -108,7 +108,7 @@
                 </div>
 
             </div>
-            <div class="agent5" class="reveal">
+            <div id="agent5" class="reveal">
                 <img  src="/public/undefined - Imgur om.png" class="agent-icon" alt="Agent Icon">
                 <h1 class="ag-title1">OMEN</h1>
                 <h1 class="agent-valo">VALORANT</h1>
@@ -117,7 +117,7 @@
                 </div>
 
             </div>
-            <div class="agent6" class="reveal">
+            <div id="agent6" class="reveal">
                 <img  src="/public/undefined - Imgur (7).png" class="agent-icon" alt="Agent Icon">
                 <h1 class="ag-title2">PHOENIX</h1>
                 <h1 class="agent-valo">VALORANT</h1>
@@ -126,7 +126,7 @@
                 </div>
 
             </div>
-            <div class="agent7" class="reveal">
+            <div id="agent7" class="reveal">
                 <img  src="/public/undefined - Imgur (3).png" class="agent-icon" alt="Agent Icon">
                 <h1 class="ag-title1">VIPER</h1>
                 <h1 class="agent-valo">VALORANT</h1>
@@ -135,7 +135,7 @@
                 </div>
 
             </div>
-            <div class="agent8" class="reveal">
+            <div id="agent8" class="reveal">
                 <img  src="/public/undefined - Imgur (1).png" class="agent-icon" alt="Agent Icon">
                 <h1 class="ag-title2">CYPHER</h1>
                 <h1 class="agent-valo">VALORANT</h1>
@@ -144,7 +144,7 @@
                 </div>
 
             </div>
-            <div class="agent9" class="reveal">
+            <div id="agent9" class="reveal">
                 <img  src="/public/undefined - Imgur (2).png" class="agent-icon" alt="Agent Icon">
                 <h1 class="ag-title1">REYNA</h1>
                 <h1 class="agent-valo">VALORANT</h1>
@@ -153,6 +153,28 @@
                 </div>
 
             </div>
+            
+            <div id="map-container" class="reveal">
+                <h1>MAPS</h1>
+                <div class="map">
+                    <img src="/public//pxfuel (1).jpg" alt="Map 1" class="map-img">
+                    <img  src="/public/6192233.png" alt="Map 2" class="map-img">
+                    <img  src="/public/6192298.jpg" alt="Map 3" class="map-img">
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" height="0">
+                <defs>
+                    <filter id="wave" x="0" y="0" width="200%" height="200%">
+                        <feTurbulence type="fractalNoise" baseFrequency="0.02 0.05" numOctaves="4" result="turbulence"/>
+                        <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" xChannelSelector="R" yChannelSelector="G">
+                            <animate attributeName="scale" values="20; 30; 20" dur="1s" repeatCount="indefinite"/>
+                        </feDisplacementMap>
+                    </filter>
+                </defs>
+            </svg>
+            
+            
+            
             
         
         </div>
