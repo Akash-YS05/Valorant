@@ -412,7 +412,7 @@ h6 {
     width: 100%;
     height: 100%;
     margin: 5rem 0;
-    outline: 3px solid #fd4556;
+    outline: 1px solid #fd4556;
     outline-offset: 1rem;
     transition: 0.3s;
 }
@@ -546,16 +546,6 @@ h6 {
     /* height: 100vh; */
 }
 
-.map-container {
-    position: relative;
-    height: 80vh;
-    width: 80vw;
-    display: block;
-    margin: auto;
-    color: white;
-    font-family: 'font-new';
-}
-
 #map-container h1 {
     font-family: 'font';
 }
@@ -570,9 +560,20 @@ h6 {
 
 
 }
+
+.map-container {
+    position: relative;
+    height: 80vh;
+    width: 80vw;
+    display: block;
+    margin: auto;
+    color: white;
+    font-family: 'font-new';
+}
+
 .map-container .map {
     padding: 1.5rem 0.5rem;
-    outline: 5px solid #fd4556;
+    /* outline: 5px solid #fd4556; */
     /* outline-offset: 1rem; */
 }
 
@@ -593,3 +594,31 @@ h6 {
     transform: scale(1.05);
     filter: url(#wave); 
 } */
+.slider-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slider {
+    display: flex;
+    width: 100%; /* Adjust according to number of slides (100vw per slide) */
+    transition: transform 0.3s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    width: 200px;
+    height: auto;
+}
