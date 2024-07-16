@@ -9,12 +9,16 @@
         integrity="sha512-v/czc6+hOFb/mOEjYnWagkq4VqYsrQX+0EiLsyJ6L0nwLSBfD/sb81B8+54/4FFMr3n3j1aLo5e1G4XfnptiBQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Valorant</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
+
+    
     <div id="cursor"></div>
-    <div class="main1">
+    <div id="main1">
         <div class="nav">
             <div class="left">
                 <img width="20px" height="20px"
@@ -155,13 +159,27 @@
             </div>
             
             <div id="map-container" class="reveal">
-                <h1>MAPS</h1>
+                <h1 class="title"><span>MAPS</span><br>MAPS</h1>
+            </div>
+
+            <div class="map-container">
                 <div class="map">
-                    <img src="/public//pxfuel (1).jpg" alt="Map 1" class="map-img">
-                    <img  src="/public/6192233.png" alt="Map 2" class="map-img">
-                    <img  src="/public/6192298.jpg" alt="Map 3" class="map-img">
+                    <img src="/public/Screenshot_2024-07-16-12-00-09-169_app.rvx.android.youtube.jpg" alt="Map 1" class="map-img">
+                </div>
+                <div class="map">
+                    <img src="/public/IMG_20240716_120645.jpg" alt="Map 2" class="map-img">
+                </div>
+                <div class="map">
+                    <img src="/public/IMG_20240716_120704.jpg" alt="Map 3" class="map-img">
+                </div>
+                <div class="map">
+                    <img src="/public/6192298.jpg" alt="Map 3" class="map-img">
+                </div>
+                <div class="map">
+                    <img src="/public/6192233.png" alt="Map 3" class="map-img">
                 </div>
             </div>
+            
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" height="0">
                 <defs>
                     <filter id="wave" x="0" y="0" width="200%" height="200%">
@@ -186,18 +204,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="sidebar" id="sidebar">
         <div class="close-btn" onclick="toggleSidebar()">&#10006;</div>
         <ul>
@@ -208,11 +214,15 @@
             <li><a href="#">LEADERBOARD</a></li>
         </ul>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> <!-- Add this line -->
-    <script src="/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
 
+    <script src="/script.js"></script>
 </body>
 
 </html>

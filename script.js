@@ -1,6 +1,14 @@
-var main=document.querySelector(".main1");
+// import LocomotiveScroll from 'locomotive-scroll';
+var main=document.querySelector("#main1");
 var cursor = document.querySelector("#cursor");
 var h = document.querySelector("#t");
+
+//locomotive
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main1'),
+//     smooth: true
+// });
+
 
 main.addEventListener("mousemove",function(val){//val highly depends on the event that we are using
     gsap.to(cursor,{
@@ -54,12 +62,26 @@ gsap.utils.toArray('.reveal').forEach(element => {
   );
 });
 
+Shery.textAnimate("#t h1", {
+    style: 2,
+    y: 0,
+    delay: 0,
+    duration: 2,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    multiplier: 0.1,
+  });
+
+Shery.imageEffect(".map img", {
+    style: 3,
+    config:{"uFrequencyX":{"value":6.11,"range":[0,100]},"uFrequencyY":{"value":6.11,"range":[0,100]},"uFrequencyZ":{"value":15.27,"range":[0,100]},"geoVertex":{"range":[1,64],"value":7.73},"zindex":{"value":"1","range":[-9999999,9999999]},"aspect":{"value":1.6480685615985813},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0,"y":0}},"shapeScale":{"value":{"x":0.5,"y":0.5}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},"shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":0},"scrollLerp":{"value":0.07},"gooey":{"value":false},"infiniteGooey":{"value":false},"growSize":{"value":4,"range":[1,15]},"durationOut":{"value":1,"range":[0.1,5]},"durationIn":{"value":1.5,"range":[0.1,5]},"displaceAmount":{"value":0.5},"masker":{"value":true},"maskVal":{"value":1.21,"range":[1,5]},"scrollType":{"value":0},"noEffectGooey":{"value":true},"onMouse":{"value":1},"noise_speed":{"value":0.2,"range":[0,10]},"metaball":{"value":0.2,"range":[0,2]},"discard_threshold":{"value":0.5,"range":[0,1]},"antialias_threshold":{"value":0.002,"range":[0,0.1]},"noise_height":{"value":0.5,"range":[0,2]},"noise_scale":{"value":10,"range":[0,100]}} ,
+
+})
 
 // scripts.js
-document.querySelector('.map-container').addEventListener('wheel', function(event) {
-    if (event.deltaY !== 0) {
-        event.preventDefault();
-        this.scrollLeft += event.deltaY;
-    }
-});
+// document.querySelector('.map-container').addEventListener('wheel', function(event) {
+//     if (event.deltaY !== 0) {
+//         event.preventDefault();
+//         this.scrollLeft += event.deltaY;
+//     }
+// });
 
