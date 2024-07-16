@@ -123,7 +123,7 @@ sliderContainer.addEventListener('wheel', (event) => {
     // Animate slider movement
     gsap.to(slider, {
         x: -scrollPosition,
-        duration: 0.5,
+        duration: 5,
         ease: "power2.out"
     });
 
