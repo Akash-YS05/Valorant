@@ -123,7 +123,7 @@ sliderContainer.addEventListener('wheel', (event) => {
     // Animate slider movement
     gsap.to(slider, {
         x: -scrollPosition,
-        duration: 5,
+        duration: 10,
         ease: "power2.out"
     });
 
@@ -153,3 +153,20 @@ slider.addEventListener('scroll', () => {
 //     }
 // });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const esportsSection = document.getElementById('esportsSection');
+    const events = document.querySelectorAll('.event');
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: esportsSection,
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true
+        }
+    });
+
+    tl.from('.title', { duration: 1, y: -50, opacity: 0, ease: 'power2.out' })
+      .from('.description', { duration: 1, y: -30, opacity: 0, ease: 'power2.out' }, "-=0.5")
+      .from(events, { duration: 1, scale: 0.8, opacity: 0, stagger: 0.2, ease: 'power2.out' }, "-=0.5");
+});
