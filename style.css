@@ -250,6 +250,17 @@ h6 {
     background-color: aliceblue;
 }
 
+.charac{
+    z-index: 4;
+    animation: png 3s infinite ease-in-out;
+}
+#kill{
+    box-shadow: none;
+    background-color: #00000000;
+    border: none;
+}
+
+
 .main {
     width: 100%;
     height: 100%;
@@ -330,9 +341,9 @@ h6 {
 #intro .intro-vid video {
     display: block;
     margin: auto;
-    width: 80%;
+    width: 90%;
     height: auto;
-    outline: 8px solid #fd4556;
+    /* outline: 8px solid #fd4556; */
     padding: 1rem;
 }
 
@@ -428,11 +439,12 @@ h6 {
     width: 100%;
     height: 100%;
     margin: 5rem 2rem;
-    outline: 3px solid #fd4556;
+    /* outline: 3px solid #fd4556; */
     outline-offset: 1rem;
     /* transition: 0.3s; */
     /* padding: 5rem; */
     /* width: 80vw; */
+    
 }
 
 #agent1 {
@@ -650,4 +662,112 @@ h6 {
 .slide img {
     width: 30%;
     height: auto;
+}
+
+.esports-section{
+    width: 100%;
+    height: 100%;
+    background-color: #fd4556;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+}
+.contentt{
+    margin-top: 10px;
+}
+.esports-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.event{
+    margin-top: 10px;
+}
+.event img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.event h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.event p {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .event {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .esports-content{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .agents #agent1,
+#agent2,
+#agent3,
+#agent4,
+#agent5,
+#agent6,
+#agent7,
+#agent8,
+#agent9 {
+    position: relative;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    margin: 5rem 2rem;
+    /* outline: 3px solid #fd4556; */
+    outline-offset: 1rem;
+    /* transition: 0.3s; */
+    /* padding: 5rem; */
+    /* width: 80vw; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.agent-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border: 5px solid #00000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+        0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: perspective(1100px) rotateY(25deg) rotateX(20deg);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(106, 106, 106, 0.959);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+    margin-top: -10px;
+}
+
+.agent1-p,
+.agent1-p1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 40%;
+    font-size: 12px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+}
+
 }
