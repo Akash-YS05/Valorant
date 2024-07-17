@@ -89,6 +89,7 @@ Shery.textAnimate("#t h1", {
 Shery.imageEffect(".map img", {
     style: 3,
     config:{"uFrequencyX":{"value":6.11,"range":[0,100]},"uFrequencyY":{"value":6.11,"range":[0,100]},"uFrequencyZ":{"value":15.27,"range":[0,100]},"geoVertex":{"range":[1,64],"value":7.73},"zindex":{"value":"1","range":[-9999999,9999999]},"aspect":{"value":1.6480685615985813},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0,"y":0}},"shapeScale":{"value":{"x":0.5,"y":0.5}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},"shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":0},"scrollLerp":{"value":0.07},"gooey":{"value":false},"infiniteGooey":{"value":false},"growSize":{"value":4,"range":[1,15]},"durationOut":{"value":1,"range":[0.1,5]},"durationIn":{"value":1.5,"range":[0.1,5]},"displaceAmount":{"value":0.5},"masker":{"value":true},"maskVal":{"value":1.21,"range":[1,5]},"scrollType":{"value":0},"noEffectGooey":{"value":true},"onMouse":{"value":1},"noise_speed":{"value":0.2,"range":[0,10]},"metaball":{"value":0.2,"range":[0,2]},"discard_threshold":{"value":0.5,"range":[0,1]},"antialias_threshold":{"value":0.002,"range":[0,0.1]},"noise_height":{"value":0.5,"range":[0,2]},"noise_scale":{"value":10,"range":[0,100]}} ,
+    debugger: true
 
 });
 
@@ -166,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    tl.from('.title', { duration: 1, y: -50, opacity: 0, ease: 'power2.out' })
-      .from('.description', { duration: 1, y: -30, opacity: 0, ease: 'power2.out' }, "-=0.5")
+    // tl.from('.title', { duration: 1, y: -50, opacity: 0, ease: 'power2.out' })
+      tl.from('.description', { duration: 1, y: -30, opacity: 0, ease: 'power2.out' }, "-=0.5")
       .from(events, { duration: 1, scale: 0.8, opacity: 0, stagger: 0.2, ease: 'power2.out' }, "-=0.5");
 });
