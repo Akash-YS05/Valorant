@@ -602,48 +602,39 @@ h6 {
 
 }
 
-.map-container {
-    /* position: relative; */
-    /* height: 80vh; */
-    width: 80vw;
-    display: block;
-    margin: auto;
+
+.map-container{
     color: white;
-    font-family: 'font-new';
+    padding-right: 1vw;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
 }
-
-.map-container .map {
-    padding: 1.5rem 0.5rem;
-    /* outline: 5px solid #fd4556; */
-    /* outline-offset: 1rem; */
-}
-
-.map {
+.map{
     position: relative;
-    margin-top: 2rem;
-   
-    height: 100%;
     width: 100%;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
 }
-
-
-.map h1 {
+.map h1{
+    text-transform: uppercase;
+    font-size: 4.6vw;
+    opacity: .7;
+}
+.maplast{
+    border-bottom: 1px solid #888;
+}
+.emp{
+    height: 160%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
     position: absolute;
-    top: 4rem;
-    right: 22rem;
-    text-align: center;
-    z-index: 2;
-    font-size: 4rem;
-    background: -webkit-linear-gradient(#fd4556, rgb(28, 21, 71));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.map-img {
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
+    transform: translate(-50%,-50%);
 }
 
 /* .map-img:hover {
@@ -681,6 +672,7 @@ h6 {
 
 #esports {
     padding-top: 5rem;
+    margin-top: 400px;
 }
 
 #esports h1 {
@@ -704,7 +696,7 @@ h6 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 0px;
     padding: 0;
 
 }
@@ -734,6 +726,72 @@ h6 {
 .event p {
     margin-top: 5px;
     font-size: 1em;
+}
+.footer{
+    width: 100%;
+    height: 60%;
+    margin-top: 3700px;
+    background-color: #ffffff;
+}
+.innerdiv{
+    background-color: #fd4556;
+    width: 100%;
+    height: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-size: larger;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.innerdiv:hover{
+    background-color: #fd4556;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-top: -20px;
+    transition: 0.3s;
+}
+.inner1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 400px;
+}
+.left1 ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+.mid1 ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+.right1 ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.left1 ul li{
+    font-size: 10px;
+    margin-top: 20px;
+}
+.mid1 ul li{
+    font-size: 10px;
+    margin-top: 20px;
+}
+.right1 ul li{
+    font-size: 10px;
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -804,5 +862,52 @@ h6 {
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(8px);
 }
+#esports {
+    padding-top: 1rem;
+    margin-top: -400px;
+}
 
+#esports h1 {
+    font-size: 1rem;
+    font-family: 'font';
+}
+
+#esports h1 span {
+    opacity: 0.3;
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+    font-family: 'font-new';
+}
+
+
+.esports-section{
+    width: 80vw;
+    height: 100%;
+    background-color: #fd4556;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -100px;
+    padding: 0;
+
+}
+.event{
+    margin-top: 10px;
+    display: block;
+}
+.event img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.event h3 {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.event p {
+    margin-top: 5px;
+    font-size: 1em;
+}
 }
