@@ -602,48 +602,39 @@ h6 {
 
 }
 
-.map-container {
-    /* position: relative; */
-    /* height: 80vh; */
-    width: 80vw;
-    display: block;
-    margin: auto;
+
+.map-container{
     color: white;
-    font-family: 'font-new';
+    padding-right: 10vw;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
 }
-
-.map-container .map {
-    padding: 1.5rem 0.5rem;
-    /* outline: 5px solid #fd4556; */
-    /* outline-offset: 1rem; */
-}
-
-.map {
+.map{
     position: relative;
-    margin-top: 2rem;
-   
-    height: 100%;
     width: 100%;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top: 1px solid #888;
 }
-
-
-.map h1 {
+.map h1{
+    text-transform: uppercase;
+    font-size: 4.6vw;
+    opacity: .7;
+}
+.maplast{
+    border-bottom: 1px solid #888;
+}
+.emp{
+    height: 160%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
     position: absolute;
-    top: 4rem;
-    right: 22rem;
-    text-align: center;
-    z-index: 2;
-    font-size: 4rem;
-    background: -webkit-linear-gradient(#fd4556, rgb(28, 21, 71));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.map-img {
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
+    transform: translate(-50%,-50%);
 }
 
 /* .map-img:hover {
