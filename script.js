@@ -79,12 +79,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.utils.toArray('.reveal').forEach(element => {
     gsap.fromTo(element, 
-        { opacity: 0, y: 50 }, 
+        { opacity: 0, y: 40 }, 
         { opacity: 1, y: 0, 
             scrollTrigger: {
                 trigger: element,
-                start: "top 90%", 
-                end: "bottom 70%", 
+                start: "top 100%", 
+                end: "bottom 40%", 
                 scrub: 1, 
                 toggleActions: "play none none none"
             }
@@ -100,6 +100,20 @@ Shery.textAnimate("#t h1", {
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     multiplier: 0.1,
 });
+
+gsap.from("#intro span", {
+    opacity: 0,
+    filter: "blur(10px)",
+    duration: 0.5,
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: "#intro",
+      start: "top 90%", // Start animation when the top of #intro is 80% in view
+      end: "bottom 10%", // End animation when the top of #intro is at the top of the viewport
+      toggleActions: "play none none reverse", // Play animation when entering viewport, reverse when leaving
+    //   markers: true // Optional: Show markers for debugging
+    }
+  });
 
 document.querySelectorAll(".map").forEach(function (elem) {
     var rotate = 0;//it will store the previous position of mouse in x-axis

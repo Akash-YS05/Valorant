@@ -75,7 +75,7 @@ body {
 
 .sidebar ul li a {
     text-decoration: none;
-    color: #FF4654;
+    color: #fff;
     font-size: 26px;
     line-height: 30px;
     font-family: 'font-new';
@@ -99,7 +99,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-    color: rgb(255, 255, 255);
+    color: #fd4556;
     font-weight: bold;
 }
 
@@ -370,7 +370,7 @@ h6 {
 }
 
 #intro .intro-p {
-    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     line-height: 3.5rem;
     font-family: 'font-new';
@@ -395,13 +395,19 @@ h6 {
     transition: background-position 0.5s ease;
     color: aliceblue;
     border: none;
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding: 10px 30px;
     font-size: 1rem;
+    letter-spacing: 2px;
     transition: 0.4s;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 10px;
     box-shadow: 2px 2px 22px rgb(42, 19, 70);
+}
+
+#intro .intro-btn span {
+    font-family: 'font-new';
+    font-size: 1.5rem;
 }
 
 #intro .intro-btn:hover {
@@ -645,13 +651,13 @@ h6 {
 .map h1{
     text-transform: uppercase;
     font-size: 4.6vw;
-    opacity: .7;
+    /* opacity:1; */
 }
 .maplast{
     border-bottom: 1px solid #888;
 }
 .emp{
-    height: 160%;
+    height: 180%;
     opacity: 0;
     pointer-events: none;
     z-index: 999;
