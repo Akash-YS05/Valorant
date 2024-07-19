@@ -219,7 +219,7 @@ window.addEventListener("wheel",function(val){
     if(val.deltaY>0){
         gsap.to(".marque",{
             transform: "translateX(-200%)",
-            duration: 4,
+            duration: 8,
             ease: "none",
             repeat:-1//it will repeat infinte times
         })
@@ -230,7 +230,7 @@ window.addEventListener("wheel",function(val){
     else{
         gsap.to(".marque",{
             transform: "translateX(0%)",
-            duration: 4,
+            duration: 8,
             ease: "none",
             repeat:-1//it will repeat infinte times
         })
