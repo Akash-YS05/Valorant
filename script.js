@@ -2,6 +2,7 @@
 var main=document.querySelector("#main1");
 var cursor = document.querySelector("#cursor");
 var h = document.querySelector("#t");
+var tm = document.querySelector(".slider")
 var mt = document.querySelector(".open-btn");
 
 //locomotive
@@ -47,6 +48,20 @@ h.addEventListener("mouseleave",function(){
         backgroundColor: "#fff"
     })
 });
+
+// tm.addEventListener("mouseenter",function(){
+//     gsap.to(cursor,{
+//         scale: 2,
+//         backgroundColor: "rgba(0,0,0,0.5)",
+//     })
+// });
+
+// tm.addEventListener("mouseleave",function(){
+//     gsap.to(cursor,{
+//         scale: 1,
+//         backgroundColor: "#fff"
+//     })
+// });
 
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
@@ -193,3 +208,34 @@ document.addEventListener('DOMContentLoaded', () => {
         tl.from('.description', { duration: 1, y: -30, opacity: 0, ease: 'power2.out' }, "-=0.5")
         .from(events, { duration: 1, scale: 0.8, opacity: 0, stagger: 0.2, ease: 'power2.out' }, "-=0.5");
 });
+gsap.to(".marque",{
+    transform: "translateX(-100%)",
+    duration: 2,
+    ease: "none",
+    repeat:-1//it will repeat infinte times
+})
+
+window.addEventListener("wheel",function(val){
+    if(val.deltaY>0){
+        gsap.to(".marque",{
+            transform: "translateX(-200%)",
+            duration: 4,
+            ease: "none",
+            repeat:-1//it will repeat infinte times
+        })
+        gsap.to(".marque img",{
+            rotate: 180
+        })
+    }
+    else{
+        gsap.to(".marque",{
+            transform: "translateX(0%)",
+            duration: 4,
+            ease: "none",
+            repeat:-1//it will repeat infinte times
+        })
+        gsap.to(".marque img",{
+            rotate: 0
+        })
+    }
+})
