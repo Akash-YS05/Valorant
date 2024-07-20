@@ -704,9 +704,9 @@ h6 {
 }
 
 #move{
-    background-color: rgb(42, 19, 70);
+    background-color: rgb(249, 102, 102);
     display: flex;
-    padding: 3vw 0vw;
+    padding: 1vw 0vw;
     overflow: hidden;
 }
 
@@ -791,8 +791,9 @@ h6 {
 
 .char {
     position: relative;
-    width: 80vw;
-    height: 100vh;
+    width: 100%;
+    background-color: #fd455700;
+    height: 100%;
     /* background: linear-gradient(to bottom, #000, #f8071f, #000); */
     margin: 7rem 0;
     display: flex;
@@ -805,6 +806,8 @@ h6 {
     width: 40%;
     gap: 5rem;
     z-index: 11;
+    animation: png 5s infinite ease-in-out;
+
 }
 .charimg2 {
     /* position: absolute; */
@@ -813,6 +816,8 @@ h6 {
     width: 55%;
     gap: 5rem;
     z-index: 11;
+    animation: png 3s infinite ease-in-out;
+
 }
 .charimg3 {
     /* position: absolute; */
@@ -820,6 +825,8 @@ h6 {
     top: 30%;
     width: 70%;
     gap: 5rem;
+    animation: png 4s infinite ease-in-out;
+
     z-index: 11;
 }
 .char h1 {
@@ -838,7 +845,7 @@ h6 {
     /* position: absolute; */
     width: 100%;
     height: 60%;
-    margin-top: 190rem;
+    margin-top: 390vh;
     background-color: #ffffff;
     font-family: 'font-new';
 }
