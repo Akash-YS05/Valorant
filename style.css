@@ -766,7 +766,7 @@ h6 {
 }
 #page2{
     margin-top: 390px;
-    height:50vh ;
+    height:40vh ;
     width: 100%;
 }
 
@@ -796,9 +796,8 @@ h6 {
     font-family: 'font-new';
 }
 
-#esports {
-    /* padding-top: 5rem; */
-    /* margin-top: 400px; */
+#esports title {
+    padding-bottom: 2rem;
 }
 
 #esports h1 {
@@ -860,9 +859,9 @@ h6 {
     position: relative;
     width: 100%;
     background-color: #fd455700;
-    height: 100%;
+    /* height: 100%; */
     /* background: linear-gradient(to bottom, #000, #f8071f, #000); */
-    margin: 2rem 0;
+    margin: 1rem 0;
     display: flex;
     text-align: center;
 }
@@ -896,7 +895,7 @@ h6 {
 
     z-index: 11;
 }
-@keyframes pngg {
+/* @keyframes pngg {
     0% {
         transform: translateX(0px);
     }
@@ -908,7 +907,7 @@ h6 {
     100% {
         transform: translateX(0px);
     }
-}
+} */
 
 .char h1 {
     position: absolute;
@@ -1021,12 +1020,34 @@ h6 {
 }
 #cutons{
     width: 100%;
-    height: auto;
+    /* height: auto; */
     background-color: rgba(0, 0, 0, 0);
     color: #ffffff;
     padding: 10px;
     text-align: center;
 }
+#cutons p {
+    font-size: 1.6rem;
+    line-height: 5rem;
+}
+#cutons p span {
+    color: #fd4556;
+    font-size: 2.3rem;
+}
+
+#cutons h1 {
+    font-size: 6rem;
+    /* padding-bottom: 2rem; */
+}
+.videoo video {
+    display: block;
+    margin: auto;
+    width: 90%;
+    /* height: auto; */
+    padding: 3rem;
+
+}
+
 .cuts{
     display: flex;
     align-items: center;
