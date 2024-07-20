@@ -11,20 +11,24 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Valorant</title>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-    <div id="loader" class="loader">
-        <div class="spinner"></div>
-        <h1>VALORANT</h1>
+    <div class="container">
+        <div class="pre-loader">
+            <div class="loader"></div>
+            <div class="loader-bg"></div>
+        </div>
+        <div class="loader-content">
+            <div class="count"><p>0</p></div>
+            <div class="copy"><p class="ml16">valorant</p></div>
+        </div> 
+        <div class="laoder-2"></div>
     </div>
-    <div id="text" class="text">
-        
-    </div>
-    <!-- <div class="scrollable-element" style="height: 300px; overflow-y: scroll;"></div> -->
 
     <div id="cursor"></div>
     <div id="main1" >
@@ -370,6 +374,7 @@
             <li><h3><a href="#">NEWS</a></h3></li>
             <li><h3><a href="#">LEADERBOARD</a></h3></li>
         </ul>
+    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
