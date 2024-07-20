@@ -982,6 +982,29 @@ h6 {
     margin-top: 20px;
 }
 
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #000000; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff0000; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #111111; /* Color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+.scrollable-element {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #ff0000 #000000; /* Color of the thumb and track */
+}
+
 @media (max-width: 768px) {
     .event {
         width: 100%;
@@ -1099,3 +1122,4 @@ h6 {
     font-size: 1em;
 }
 }
+
