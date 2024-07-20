@@ -253,3 +253,18 @@ window.addEventListener("wheel",function(val){
         })
     }
 })
+window.addEventListener('load', function() {
+    var loader = document.getElementById('loader');
+    var text = document.getElementById('text');
+    
+    // Show the text immediately
+    text.style.opacity = '1';
+    
+    // After the loader finishes (adjust timeout if needed)
+    setTimeout(function() {
+        loader.style.opacity = '0'; // Fade out the loader
+        setTimeout(function() {
+            loader.style.display = 'none'; // Hide the loader completely
+        }, 1000); // Match the duration of the loader's fade-out transition
+    }, 2000); // Duration for loader spinning (adjust as needed)
+});
