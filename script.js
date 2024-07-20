@@ -268,28 +268,31 @@ window.addEventListener("wheel",function(val){
 //         }, 1000); // Match the duration of the loader's fade-out transition
 //     }, 2000); // Duration for loader spinning (adjust as needed)
 // });
+
+
 function startLoader(){
     let counterElement = document.querySelector(".count p");
     let currentValue=0;
     
     function updateCounter(){
-        if(currentValue < 100){
-            let increment = Math.floor(Math.random()*10)+1;
-            currentValue = Math.min(currentValue+increment,100);
-            counterElement.textContent = currentValue;
 
-            let delay = Math.floor(Math.random()*200)+25;
-            setTimeout(updateCounter, delay);
+        if (currentValue === 100) {
+            return
         }
+        currentValue += Math.floor(Math.random()*10) + 1
+
+        if (currentValue > 100) {
+            currentValue = 100
+        }
+        
+        counterElement.textContent = currentValue
+        let delay = Math.floor(Math.random()*200)+20;
+        setTimeout(updateCounter, delay);
     }
     updateCounter();
 }
 startLoader();
-gsap.to(".count", {
-    opacity:0,
-    delay:3.5,
-    duration:0.5
-});
+
 
 let text = document.querySelector(".ml16");
 text.innerHTML = text.textContent.replace(/\S/g,"<span class='letter'>$&</span>");
@@ -319,7 +322,7 @@ anime.timeline({loop:false})
         height:"0",
         ease: "power4.inOut",
         duration:1.5,
-        delay:4
+        delay:3
     })
     gsap.to(".loader-bg",{
         height:"0",
@@ -327,18 +330,16 @@ anime.timeline({loop:false})
         duration:1.5,
         delay:3.75
     })
-    gsap.to(".loader-2",{
+    gsap.to(".loader-2", {
         clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
         ease:"power4.inOut",
         duration: 1.5,
         delay: 3.5
     })
-    gsap.from(".main",{
+    gsap.to("#main1",{
         y:200,
         ease:"power4.inOut",
         duration: 1.5,
         delay:4.5,
         stagger: 0.05
     })
-
-    
