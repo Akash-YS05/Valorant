@@ -24,7 +24,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
-    font-family: 'font-new';
+    font-family: 'font';
     overscroll-behavior: none;
 
 }
@@ -302,6 +302,16 @@ img {
     background-color: #fff;
 }
 
+.nav button {
+    margin: 9px 0;
+}
+
+.nav .div2 {
+    width: 20px;
+    display: block;
+    margin: auto;
+}
+
 .centered-div {
     display: flex;
     justify-content: center;
@@ -465,7 +475,7 @@ h6 {
 
 
 #intro {
-    margin-top: 3rem;
+    margin-top: 4rem;
 
 }
 
