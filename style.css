@@ -25,7 +25,7 @@ body {
     background-size: cover;
     overflow-x: hidden;
     font-family: 'font';
-    overscroll-behavior: none;
+    /* overscroll-behavior: none; */
 }
 
 
@@ -384,8 +384,9 @@ h6 {
     padding-bottom: 30px;
     text-align: center;
     line-height: 3.5rem;
-    font-family: 'font-new';
-    font-size: 1.7em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
     color: white;
 
 }
@@ -393,6 +394,8 @@ h6 {
 
 #intro .intro-p span {
     color: #fd4556;
+    font-family: 'font-new';
+    font-size: 1.4em;
 }
 
 #intro .intro-btn {
@@ -442,7 +445,8 @@ h6 {
     text-align: center;
     font-size: 2vw;
     line-height: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
     color: white;
 }
 
@@ -567,8 +571,8 @@ h6 {
 
 .agent1-p,
 .agent1-p1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 40%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 45%;
     font-size: 20px;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -656,8 +660,8 @@ h6 {
 #map-container p {
     font-size: 2vw;
     line-height: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;}
 
 #map-container p span {
     font-family: 'font-new';
@@ -889,6 +893,59 @@ h6 {
     -webkit-text-fill-color: transparent;
 }
 
+.gallery {
+    --s: 130px; 
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    position: relative;
+  }
+  .gallery input {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    inset: calc(50% - var(--s)/3);
+    cursor: pointer;
+    --g: linear-gradient(#fff 0 0) no-repeat;
+    background: var(--g) 50%/60% 3px,var(--g) 50%/3px 60%,#222;
+    transition: 1.5s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .gallery > img {
+    width: var(--s);
+    aspect-ratio: 1;
+    grid-area: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: scale(.5);
+    transition: 1s calc((var(--i) - 1)*.1s);
+    display: block;
+    margin: auto;
+  }
+  .gallery > img:nth-of-type(1) {--i:1;}
+  .gallery > img:nth-of-type(2) {--i:2;}
+  .gallery > img:nth-of-type(3) {--i:3;}
+  .gallery > img:nth-of-type(4) {--i:4;}
+  .gallery > img:nth-of-type(5) {--i:5;}
+  .gallery > img:nth-of-type(6) {--i:6;}
+  .gallery > img:nth-of-type(7) {--i:7;}
+  .gallery > img:nth-of-type(8) {--i:8;}
+  .gallery > img:nth-of-type(9) {--i:9;}
+  
+  .gallery > input:checked ~ img {
+    transform: 
+      rotate(calc(var(--i)* 360deg/8)) translate(calc(1.5*var(--s))) 
+      rotate(calc(var(--i)*-360deg/8));
+  }
+  .gallery > input:checked {
+    transform: rotate(135deg)
+  }
+  
+
+
 .footer{
     /* position: absolute; */
     width: 100%;
@@ -993,6 +1050,7 @@ h6 {
     color: #ffffff;
     padding: 10px;
     text-align: center;
+    /* padding-bottom: 10rem; */
 }
 #cutons p {
     font-size: 1.6rem;
@@ -1016,14 +1074,6 @@ h6 {
 
 }
 
-.cuts{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 @media (max-width: 768px) {
     .event {
         width: 100%;
